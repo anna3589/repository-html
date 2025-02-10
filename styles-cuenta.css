@@ -210,7 +210,9 @@ body{
     width: 100%;
     margin-bottom: 1.25rem;
 }
-
+.perfil-usuario-bio p{
+    font-size: 14px;
+}
 .seccion-perfil-usuario .lista-datos {
     width: 50%;
     list-style: none;
