@@ -1,0 +1,516 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration:  none;
+}
+
+body {
+display: flex;
+flex-direction: column;
+align-items: center;
+min-height: 100vh;
+background: url(img/3580671.jpg) no-repeat;
+background-size: cover;
+background-position: center;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-optical-sizing: auto;
+font-weight: 300;
+font-size: normal;
+line-height: 2;
+letter-spacing: normal;
+}
+
+/* Стили для шапки */
+header {
+position: fixed;
+z-index: 1000;
+top: 0;
+left: 0;
+right: 0;
+height: 80px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0 8%;
+box-shadow: 0 5px 10px #04043a;
+background-color: #04043a;
+color: white;
+}
+
+header i,
+header a {
+color: #fff;
+text-decoration: none;
+}
+
+header img {
+height: 75px;
+width: 75px;
+}
+
+.wrapper {
+    flex-grow: 1;
+    width: 1000px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 40px 35px 55px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    }
+    .wrapper h1{
+        font-size: 36px;
+        text-align: center;
+        margin-bottom: 20px;
+        color: white;
+    }
+    .wrapper .input-box{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        background: rgba(255, 255, 255, .0);
+    }
+    .input-box .input-field{
+        position: relative;
+        width: 48%;
+        height: 50px;
+        margin: 13px 0;
+        color: white;
+    }
+    .input-box .input-field input::placeholder{
+        color:#fff
+    }
+    .input-box .input-field i{
+        position: absolute;
+        left: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 20px;
+    }
+    .input-box .input-field input{
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        border: 2px solid rgba(255, 255, 255, alpha.2);
+        overflow: none;
+        font-size: 16px;
+        color:#fff;
+        border-radius: 6px;
+        padding: 15px 15px 15px 40px;
+    }
+    .wrapper label{
+        display: inline-block;
+        font-size: 14.5px;
+        margin: 10px 0 23px;
+    }
+    .wrapper label input{
+        accent-color: #fff;
+        margin-right: 5px;
+    }
+    .wrapper .btn{
+        width: 100%;
+        height: 45px;
+        background: #fff;
+        border: none;
+        outline: none;
+        border-radius: 6px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+        cursor: pointer;
+        font-size: 16px;
+        color: #333;
+        font-weight: 600;
+    }
+    label{
+        color: #fff;
+    }
+
+/* Стили для боковой панели */
+.sidebar {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+    padding: 10px 0; /* Agrega un poco de espacio arriba y abajo */
+  }
+  
+  .sidebar ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0 200px;
+    margin: 0;
+  }
+  
+  .sidebar li {
+    padding: 10px 50px; /* Agrega más espacio entre los elementos */
+  }
+  
+  .sidebar a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .sidebar li:hover,
+  .sidebar a:hover {
+    background-color: #f0f0f0;
+    color: #04043a;
+  }
+
+footer {
+    display: block;
+    background-color: #04043a;
+    color: white;
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    justify-content: space-between;
+    margin: auto;
+    flex-wrap: wrap;
+    color: white;
+    text-align: center;
+}
+.footer {
+    flex: 0 0 auto;  /* Фіксована висота */
+    margin-top: auto; /* Відштовхує футер вниз */
+}
+footer img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 75px;
+    width: 75px;
+}
+footer p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: #f7f7e5;
+    height: 30px;
+}
+footer p:hover{
+    color:#caddfa;
+}
+.social-media {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+.social-media a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.8rem;
+    transition: color 0.3s;
+}
+.social-media a:hover {
+    color:#caddfa;
+}
+.dropdown{
+    min-width: 15em;
+    position: relative;
+    margin: 2em;
+    width: 80%;
+    margin-left: 100px;
+}
+.dropdown *{
+    box-sizing: border-box;
+}
+
+.dropdown h1{
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+.select-clicked {
+    border: 1px solid #fff;
+    box-shadow: 0 0 0.8em #fff;
+    background: transparent;
+    color: #fff;
+}
+.select {
+    background: transparent;
+    overflow: none;
+    color: #fff;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 0.5em;
+    padding: 1em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+/*CLICKED STYLES*/
+.select-clicked{
+    border: 1px #fff solid;
+    box-shadow: 0 0 0.8em #fff;
+}
+.select:hover{
+    background: #04043a6b;
+}
+.caret{
+    width: 0;
+    height: 0;
+    border-bottom: 5px solid transparent;
+    border-top: 5px solid transparent;
+    border-left: 6px solid #fff;
+    transition: 0.3s;
+}
+.caret-rotate{
+    transform: rotate(90deg);
+}
+.menu {
+    list-style: none;
+    padding: 0em 0.5em;
+    background: #04043a;
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+    border-radius: 0.5em;
+    color: #fff;
+    position: absolute;
+    display: none;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 15em;
+    transition: 300ms cubic-bezier(0.77, 0, 0.18, 1);
+    z-index: 10; /* Збільшуємо z-index для меню */
+    overflow-y: auto; /* Якщо контент перевищує, з'являється прокрутка */
+}
+.menu.active {
+    display: block;
+}
+.menu.menu-open{
+    display: block;
+}
+.menu-open{
+    border: 1px #383838 solid;
+    height:  15em;
+}
+/*CUSTOM SCROLLBAR*/
+.menu::-webkit-scrollbar{
+    width: 8px
+}
+
+/*TRACK*/
+.menu::-webkit-scrollbar-track{
+    background-color: #404040;
+}
+
+/*HANDLE*/
+.menu::-webkit-scrollbar-thumb{
+    background: #727272;
+}
+
+/*HANDLE ON HOVER*/
+.menu::-webkit-scrollbar-thumb:hover{
+    background: #9e9e9e;
+}
+li p{
+    font-family: "Poppins", sans-serif;
+}
+.menu li{
+    padding: 0.7em;
+    margin: 0.3em 0;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+.menu li:hover{
+    background: #ffffff50;
+}
+
+/*ACTIVE STYLES*/
+.active{
+    background: #ffffff50;
+    color: #fff;
+}
+.text-fade-in{
+    animation: textFade 300ms ease-out;
+}
+input[type="date"] {
+    background: transparent;
+    overflow: none;
+    color: #fff;
+    color: white;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 10;  /* Підвищити z-index */
+}
+
+::-webkit-calendar-picker-indicator {
+    background: transparent;
+    overflow: none;
+    color: #fff;
+    cursor: pointer;
+    z-index: 10;  /* Підвищити z-index */
+}
+
+@keyframes textFade {
+    0% {
+        transform: translateX(-1em);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+/* PARA IPHONE 14 PRO MAX */
+@media (min-width: 300px) and (max-width: 600px) {
+    header {
+        padding: 0 5%;
+        height: 60px;
+    }
+
+    header img {
+        height: 50px;
+        width: 50px;
+    }
+    header a{
+        font-size: 12px;
+    }
+
+    .sidebar {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 60px;
+        padding: 5px 8px; /* Más espacio arriba y abajo */
+      }
+    
+      .sidebar ul {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        align-items: center; /* Alineamos a la izquierda */
+      }
+    
+      .sidebar li {
+        font-size: 8px;
+        padding: 10px 15px; /* Más espacio entre elementos */
+      }
+    .wrapper {
+        width: 90%; /* Увеличиваем ширину для мобильных */
+        padding: 20px; /* Уменьшаем отступы */
+    }
+    .wrapper h1{
+    font-size: 24px;
+    }
+    .input-box .input-field {
+        width: 100%; /* Полная ширина для мобильных */
+        margin: 10px 20px; /* Уменьшаем отступы */
+    }
+    .selected{
+        font-size: 16px;
+    }
+    .select li p{
+        font-size: 16px;
+    }
+    .dropdown {
+        padding: 10px;
+        margin: 1em; /* Уменьшаем отступы */
+        width: 90%; /* Увеличиваем ширину для мобильных */
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    footer p{
+        font-size: 10px;
+    }
+}
+
+/* ДPARA IPAD PRO */
+@media (min-width: 900px) and (max-width: 1200px) {
+    header {
+        padding: 0 7%;
+        height: 70px;
+    }
+    header img {
+        height: 65px;
+        width: 65px;
+    }
+    header a{
+        font-size: 16px;
+    }
+
+    .sidebar {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 80px;
+        padding:10px 200px; /* Más espacio arriba y abajo */
+        width: auto;
+      }
+    
+      .sidebar ul {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        align-items: center; /* Alineamos a la izquierda */
+      }
+    
+      .sidebar li {
+        font-size: 14px;
+        padding: 10px 15px; /* Más espacio entre elementos */
+      }
+    .wrapper {
+        left: 0;
+        right: 0;
+        width: 70%; /* Aumentamos el ancho para tabletas */
+        padding: 30px; /* Aumentamos los márgenes */
+    }
+    
+    .input-box .input-field {
+        width: 48%; /* Dejamos como está */
+    }
+    
+    .dropdown {
+        margin-left: 60px;
+        width: 80%; /* Aumentamos el ancho para tabletas */
+    }
+    footer{
+        margin-bottom: 0;
+        width: 100%;
+    }
+    footer p {
+        font-size: 14px;
+    }
+}
+/* PARA ASUS ZENBOOK FOLD */
+@media (min-width: 1200px) {
+    header {
+        padding: 0 8%;
+        height: 80px;
+    }
+
+    header img {
+        height: 75px;
+        width: 75px;
+    }
+
+    .sidebar li {
+        font-size: 14px;
+        padding: 0 0 10px 40px; /* Оставляем как есть */
+        margin-left: 40px; /* Оставляем как есть */
+    }
+    .wrapper {
+        width: 1000px; /* Оставляем как есть */
+        padding: 40px 35px 55px; /* Оставляем как есть */
+    }
+
+    .input-box .input-field {
+        width: 48%; /* Оставляем как есть */
+    }
+
+    .dropdown {
+        width: 80%; /* Оставляем как есть */
+    }
+}
