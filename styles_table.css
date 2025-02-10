@@ -138,6 +138,12 @@ footer p:hover{
     text-align: center;
     margin-bottom: 20px;
 }
+.container-table p, a{
+  text-align: center;
+  text-decoration: none;
+  list-style: none;
+  color: black;
+}
 table{
     color: black;
     font-size: 14px;

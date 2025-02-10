@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vehiculos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="vehiculos.xsd">
+   <vehiculo id="M0001">
+        <tipo>Monovolumen</tipo>
+        <marca>Renault</marca>
+        <modelo>Scenic</modelo>
+        <matricula>7534 KLC</matricula>
+        <km>87362</km>
+        <num_puertas>5</num_puertas>
+   </vehiculo>
+   <vehiculo id="M0002">
+        <tipo>Monovolumen</tipo>
+        <marca>Citroën</marca>
+        <modelo>C4 SpaceTourer</modelo>
+        <matricula>6021 JWD</matricula>
+        <km>73841</km>
+        <num_puertas>5</num_puertas>
+   </vehiculo>
+   <vehiculo id="M0003">
+        <tipo>Monovolumen</tipo>
+        <marca>Ford</marca>
+        <modelo>S-MAX</modelo>
+        <matricula>4198 JYF</matricula>
+        <km>65729</km>
+        <num_puertas>5</num_puertas>
+   </vehiculo>
+   <vehiculo id="T0001">
+        <tipo>Turismo</tipo>
+        <marca>Peugeot</marca>
+        <modelo>308</modelo>
+        <matricula>1825 LNZ</matricula>
+        <km>92643</km>
+        <potencia>130</potencia>
+   </vehiculo>
+   <vehiculo id="T0002">
+        <tipo>Turismo</tipo>
+        <marca>Volkswagen</marca>
+        <modelo>Golf</modelo>
+        <matricula>7854MGJ</matricula>
+        <km>58927</km>
+        <potencia>150</potencia>
+   </vehiculo>
+   <vehiculo id="T0003">
+        <tipo>Turismo</tipo>
+        <marca>Mazda</marca>
+        <modelo>3</modelo>
+        <matricula>2849 KRW</matricula>
+        <km>73181</km>
+        <potencia>122</potencia>
+   </vehiculo>
+   <vehiculo id="F0001">
+        <tipo>Furgoneta</tipo>
+        <marca>Iveco</marca>
+        <modelo>Daily</modelo>
+        <matricula>1482 JXN</matricula>
+        <km>105834</km>
+        <tamano>Pequeña (L1 H1)</tamano>
+   </vehiculo>
+   <vehiculo id="F0002">
+        <tipo>Furgoneta</tipo>
+        <marca>Ford</marca>
+        <modelo>Transit Custom</modelo>
+        <matricula>4572 KRM</matricula>
+        <km>117243</km>
+        <tamano>Mediana (L2 H2)</tamano>
+   </vehiculo>
+   <vehiculo id="F0003">
+        <tipo>Furgoneta</tipo>
+        <marca>Mercedes-Benz</marca>
+        <modelo>Vito</modelo>
+        <matricula>8391 LYD</matricula>
+        <km>109814</km>
+        <tamano>Grande (L3 H2)</tamano>
+   </vehiculo>
+</vehiculos>
